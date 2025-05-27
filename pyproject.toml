@@ -1,0 +1,22 @@
+[project]
+name = "cat-or-hotdog"
+version = "0.1.0"
+description = "A model to classify given image or images as cat, hot dog, or neither."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "h5py>=3.13.0",
+    "matplotlib>=3.10.3",
+    "numcodecs>=0.16.1",
+    "pillow>=11.2.1",
+    "plotext>=5.3.2",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "zarr>=3.0.8",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.basedpyright]
+typeCheckingMode = "basic"
