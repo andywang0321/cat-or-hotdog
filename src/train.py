@@ -9,7 +9,7 @@ batch_size = 64
 learning_rate = 1e-4
 num_epochs = 200
 
-model_save_path = "ckpts/resnet.pt"
+model_save_path = "../ckpts/resnet.pt"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
@@ -88,7 +88,7 @@ def main():
 
     for split in ("train", "eval", "test"):
         loaders[split] = DataLoader(
-            CatHotdogDataset(f"data/{split}.zarr"),
+            CatHotdogDataset(f"../data/{split}.zarr"),
             batch_size=batch_size,
             shuffle=True,
         )

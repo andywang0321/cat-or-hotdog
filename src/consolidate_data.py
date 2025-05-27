@@ -14,7 +14,7 @@ HOTDOG = 2
 
 
 def read_split(split):
-    cats_path: str = f"data/cats/{split}_catvsnoncat.h5"
+    cats_path: str = f"../data/cats/{split}_catvsnoncat.h5"
 
     f = h5py.File(cats_path, "r")
     # keys: 'list_classes', 'train_set_x', 'train_set_y'
@@ -22,7 +22,7 @@ def read_split(split):
     X = f[f"{split}_set_x"][:]
     y = f[f"{split}_set_y"][:]
 
-    hotdogs_path: str = f"/Users/andywang/Projects/cat-or-hotdog/data/hotdogs/{split}"
+    hotdogs_path: str = f"../data/hotdogs/{split}"
     hotdogs: str = hotdogs_path + "/hot_dog"
     notdogs: str = hotdogs_path + "/not_hot_dog"
 
@@ -63,7 +63,7 @@ def split(a):
 
 
 def save_zarr(images, labels, split):
-    zarr_path = f"data/{split}.zarr"
+    zarr_path = f"../data/{split}.zarr"
 
     root = zarr.group(zarr_path)
     imgs = root.create_array(

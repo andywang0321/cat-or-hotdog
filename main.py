@@ -4,7 +4,7 @@ import os
 
 from torchvision.utils import np
 
-from model import ResNet
+from src.model import ResNet
 from torchvision import transforms
 from PIL import Image
 import matplotlib.pyplot as plt
