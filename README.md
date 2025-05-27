@@ -9,6 +9,8 @@ After cloning this repo, `cd` into it and run:
 uv sync
 ```
 
+What? You're still not using `uv`? [Install it now!](https://docs.astral.sh/uv/)
+
 ## Usage
 
 To classify your image or images, run
