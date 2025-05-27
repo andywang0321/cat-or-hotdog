@@ -1,3 +1,4 @@
+![Output Image](output.png)
 
 # Cat or Hot Dog?
 
