@@ -1,9 +1,6 @@
-
-# Cat or Hot Dog?
-
 Date created: 2025-05-25-Sat
 
-### Matthew's take-home mini assignment
+# Matthew's take-home mini assignment
 
 **Task: build an ML model which, given an image, identifies whether it is a cat 🐈 , hotdog 🌭 , or neither.**
 
@@ -22,29 +19,3 @@ Be creative, I don't care *HOW* you solve this problem. Use any model architectu
 Try to finish by Wednesday, don't hesitate to ask me questions.
 
 **Most importantly, GLHF!**
-
-## Installation
-
-After cloning this repo, `cd` into it and run:
-
-```sh
-uv sync
-```
-
-What? You're still not using `uv`? [Install it now!](https://docs.astral.sh/uv/)
-
-## Usage
-
-To classify your image or images, run
-
-```sh
-uv run main.py
-```
-
-and follow the prompts.
-
-You may provide a single image or a directory of images.
-
-## Acknowledgments
-
-Data comes from Kaggle.
