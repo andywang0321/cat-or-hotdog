@@ -47,6 +47,8 @@ and follow the prompts.
 
 You may provide a single image or a directory of images.
 
+*try it with `data/examples`!*
+
 ## Acknowledgments
 
 Data comes from Kaggle.
